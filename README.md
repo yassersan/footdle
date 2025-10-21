@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚽ Footdle — Wordle for Football Fans
 
-## Getting Started
+![Footdle Screenshot](./public/footdle.png) <!-- Replace with your image path -->
+<!-- Optional badges -->
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript) ![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel) 
 
-First, run the development server:
+---
+
+## 🧩 What is Footdle?
+
+**Footdle** is a Wordle-style guessing game for football players' names.  
+Each day, a new mystery player is chosen — your job is to guess who it is!
+
+You have **6 attempts** to find the correct player.  
+After each guess, the tiles change color to show how close you are:
+
+- 🟩 **Green** – Correct letter in the correct position  
+- 🟨 **Yellow** – Letter exists in the name, but in a different spot  
+- ⬛ **Gray** – Letter not in the player’s name  
+
+Think you know your footballers? Give it a shot!
+
+---
+
+## 🎮 Gameplay
+
+1. Type a **football player’s name** and press **Enter**.  
+2. The grid updates with colored hints (like Wordle).  
+3. Use logic and your football knowledge to refine your guesses.  
+4. Guess correctly within 6 tries to win the day’s Footdle!  
+5. Share your results with friends using the copyable emoji grid.
+
+![Gameplay Example](./public/footdle-gameplay.png) <!-- optional second screenshot -->
+
+---
+
+## 🧠 Features
+
+- ⚽ Daily player rotation (everyone gets the same player each day)  
+- 🟨 Smart letter feedback (handles duplicate letters correctly)  
+- 🔤 Supports names with accents & multiple words  
+- 🕹️ Smooth animations and responsive design  
+- 💾 Progress saved locally (no account needed)  
+- 🧭 Built with **Next.js + TypeScript + Tailwind CSS**  
+
+---
+
+## 🚀 Run Locally
+
+Clone the repository and start the dev server:
 
 ```bash
+git clone https://github.com/yassersan/footdle.git
+cd footdle
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
